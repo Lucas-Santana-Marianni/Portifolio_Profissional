@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lucas S. Marianni — Portfólio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">Lucas S.M</a>
+      <ul class="nav-links">
+        <li><a class="nl1" href="about.html">Sobre</a></li>
+        <li><a class="nl2" href="skills.html">Habilidades</a></li>
+        <li><a class="nl3" href="projects.html">Projetos</a></li>
+        <li><a class="nl4" href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="home">
+    <section class="hero">
+      <div class="profile">
+        <img src="assets/img/Profile.png" alt="Foto de perfil" class="avatar">
+      </div>
+      <div class="intro">
+        <h1>Lucas Santana Marianni</h1>
+        <p class="role">Desenvolvedor Back‑end • Criador de Banco de dados</p>
+        <p class="slogan">Transformo ideias em código — com performance e cuidado.</p>
+      </div>
+    </section>
+
+    <section class="panel-section">
+      <h2 class="section-title">Projetos de Destaque</h2>
+      <div class="carousel" id="carousel">
+        <button class="arrow left" id="prev" aria-label="Anterior">&larr;</button>
+        <div class="slides" id="slides">
+          <!-- Slides injected or static -->
+          <div class="slide">
+            <img src="assets/img/project1.png" alt="Projeto 1">
+            <div class="slide-info">
+              <h3>Los Cubos</h3>
+              <p>Um site sobre cubos mágicos com design responsiva.</p>
+              <div class="slide-actions">
+                <a target="_blank" class="enter-btn" href="https://lucas-santana-marianni.github.io/los_cubos_demo-HTML/">Entrar no site</a>
+                <a target="_blank" class="repo-btn" href="https://github.com/Lucas-Santana-Marianni/los_cubos_demo-HTML">Ver repositório</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="assets/img/project2.png" alt="Projeto 2">
+            <div class="slide-info">
+              <h3>Loja do Mundo</h3>
+              <p>Um projeto de banco de dados com consultas.</p>
+              <div class="slide-actions">
+                <a target="_blank" class="enter-btn" href="https://lucas-santana-marianni.github.io/LojaDoMundo-SQL/">Entrar no site</a>
+                <a target="_blank" class="repo-btn" href="https://github.com/Lucas-Santana-Marianni/LojaDoMundo-SQL">Ver repositório</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="assets/img/project3.png" alt="Projeto 3">
+            <div class="slide-info">
+              <h3>Tuning Garage</h3>
+              <p>Este projeto contém um site SPA com conteúdo detalhado e tom entusiasta.</p>
+              <div class="slide-actions">
+                <a target="_blank" class="enter-btn" href="https://lucas-santana-marianni.github.io/Site-Tuning_Garage-HTML/">Entrar no site</a>
+                <a target="_blank" class="repo-btn" href="https://github.com/Lucas-Santana-Marianni/Site-Tuning_Garage-HTML">Ver repositório</a>
+              </div>
+            </div>
+          </div>
+           <div class="slide">
+            <img src="assets/img/project4.png" alt="Projeto 4">
+            <div class="slide-info">
+              <h3>Controle de Estoque</h3>
+              <p>Este projeto consiste em um banco de dados relacional para gerenciamento.</p>
+              <div class="slide-actions">
+                <a target="_blank" class="enter-btn" href="https://lucas-santana-marianni.github.io/Sistema_Controle_de_Estoque-SQL/">Entrar no site</a>
+                <a target="_blank" class="repo-btn" href="https://github.com/Lucas-Santana-Marianni/Sistema_Controle_de_Estoque-SQL">Ver repositório</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="arrow right" id="next" aria-label="Próximo">&rarr;</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="foo">© {year} Lucas S. Marianni — <a href="https://github.com/Lucas-Santana-Marianni" target="_blank">GitHub</a> • <a href="https://www.linkedin.com/in/lucas-santana-marianni-15899b39a/" target="_blank">LinkedIn</a></p>
+  </footer>
+
+  <script>const YEAR = new Date().getFullYear(); document.addEventListener('DOMContentLoaded', ()=>{document.querySelector('.site-footer p').innerHTML = `© ${YEAR} Lucas S. Marianni — <a href="https://github.com/Lucas-Santana-Marianni" target="_blank">GitHub</a> • <a href="https://www.linkedin.com/in/lucas-santana-marianni-15899b39a/" target="_blank">LinkedIn</a>`})</script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Modal de imagem -->
+<div id="img-modal" class="img-modal">
+  <button id="close-modal" class="close-modal" aria-label="Fechar imagem">&times;</button>
+  <img id="modal-img" class="modal-content">
+</div>
+
+</body>
+</html>

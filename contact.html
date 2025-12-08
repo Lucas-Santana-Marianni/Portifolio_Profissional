@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato — Lucas S. Marianni</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">Lucas S.M</a>
+      <ul class="nav-links">
+        <li><a class="nl1" href="about.html">Sobre</a></li>
+        <li><a class="nl2" href="skills.html">Habilidades</a></li>
+        <li><a class="nl3" href="projects.html">Projetos</a></li>
+        <li><a class="nl4" href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content1">
+    <section class="contact">
+      <h1>Contato</h1>
+      <p>Conecte-se comigo no LinkedIn ou envie um e-mail.</p>
+      <ul class="contacts">
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lucas-santana-marianni-15899b39a/" target="_blank">Lucas Santana Marianni</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/Lucas-Santana-Marianni" target="_blank">Lucas-Santana-Marianni</a></li>
+        <li><strong>E-mail:</strong> lucas.sm.devsystem@gmail.com</li>
+      </ul>
+
+      <h2>Me mande uma mensagem!</h2>
+      <form class="contact-form" onsubmit="alert('Formulário simulado — substitua por backend ou formspree') ; return false;">
+        <label>
+          Nome
+          <input type="text" name="name" placeholder="Seu nome" required>
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" placeholder="seuemail@123.com" required>
+        </label>
+        <label>
+          Mensagem
+          <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+        </label>
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© {year} — Lucas S. Marianni</p>
+  </footer>
+
+  <script>document.addEventListener('DOMContentLoaded', ()=>{document.querySelector('.site-footer p').textContent = `© ${new Date().getFullYear()} — Lucas S. Marianni`})</script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

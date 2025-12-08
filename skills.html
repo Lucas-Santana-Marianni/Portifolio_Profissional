@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Habilidades — Lucas S. Marianni</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">Lucas S.M</a>
+      <ul class="nav-links">
+        <li><a class="nl1" href="about.html">Sobre</a></li>
+        <li><a class="nl2" href="skills.html">Habilidades</a></li>
+        <li><a class="nl3" href="projects.html">Projetos</a></li>
+        <li><a class="nl4" href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="skills">
+      <div class="skill-grid">
+        <div class="skill">
+          <h3>HTML</h3>
+          <div class="bar"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <div class="bar"><span style="width:80%"></span></div>
+        </div>
+        <div class="skill">
+          <h3>SQL</h3>
+          <div class="bar"><span style="width:90%"></span></div>
+        </div>
+        <div class="skill">
+          <h3>GitHub</h3>
+          <div class="bar"><span style="width:88%"></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© {year} — Lucas S. Marianni</p>
+  </footer>
+
+  <script>document.addEventListener('DOMContentLoaded', ()=>{document.querySelector('.site-footer p').textContent = `© ${new Date().getFullYear()} — Lucas S. Marianni`})</script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
